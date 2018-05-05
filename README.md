@@ -1,5 +1,8 @@
 # starWars
 Desenvolvido para a vaga de estagiária.
+-react OK
+-TS OK
+-Axios OK
 
 # 17/04/2018 - Teste Syligo Health
 

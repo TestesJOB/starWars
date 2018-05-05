@@ -1,4 +1,6 @@
+import * as axios from "axios";
 import * as React from 'react';
+
 // import React, { Component } from 'react';
 // import { withRouter } from 'react-router'
 import {
@@ -14,7 +16,33 @@ import "./css/App.css";
 // FILES
 // import Home from "./components/pages/Home";
 
+const baseSWP = "https://swapi.co/api/people/";
+
 class App extends React.Component {
+    
+  constructor(props:any){
+    super(props);
+
+    this.state = {
+        personagens: []
+    }
+  }
+
+  public componentDidMount(){
+    const self = this;
+    axios.default.get(baseSWP)
+    .then(response => {
+        // console.log(response.data);
+        self.setState({
+            personagens: response.data
+        })
+    })
+    .catch(error => {
+        // console.log(error);
+        // console.log(error.status);
+    });
+  }
+
   public render() {
     return (
       <div className="App">
