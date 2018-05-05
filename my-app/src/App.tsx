@@ -1,3 +1,5 @@
+
+
 import * as axios from "axios";
 import * as React from 'react';
 // import React, { Component } from 'react';
@@ -11,6 +13,10 @@ import {
 // CSS
 import "./css/App.css";
 
+// PAGES
+import Home from "./pages/Home";
+
+// VARS
 const baseSWP = "https://swapi.co/api/people/";
 const personagem = '';
 
@@ -26,7 +32,7 @@ class App extends React.Component<any, any> {
 
   public componentDidMount(){
     const self = this;
-    axios.default.get(baseSWP + "1")
+    axios.default.get(baseSWP + "2")
     .then(response => {
         self.setState({
             personagem: response.data

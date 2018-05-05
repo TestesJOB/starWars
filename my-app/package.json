@@ -22,6 +22,7 @@
     "@types/node": "^10.0.3",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
+    "tslint-origin-ordered-imports-rule": "^1.0.4",
     "typescript": "^2.8.3"
   }
 }
