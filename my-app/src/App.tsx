@@ -7,7 +7,8 @@ import * as React from 'react';
 import {
    BrowserRouter as Router,
    Link,
-   Route
+   Route,
+   Switch
 } from 'react-router-dom'
 
 // CSS
@@ -46,6 +47,10 @@ class App extends React.Component<any, any> {
   public render() {
     return (
         <React.Fragment>
+            <Router>
+                <Route exact={true} path="/" component={Home} />
+            </Router>
+            <Home/>
             < Router >
                 <div>TESTE 1</div>
             </ Router >
