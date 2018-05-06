@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 
 
-class Card extends React.Component {
+class PesonagemExtendido extends React.Component {
     constructor(props: any){
         super(props);
     
@@ -21,4 +21,4 @@ class Card extends React.Component {
     }
 }
 
-export default Card;
+export default PesonagemExtendido;
