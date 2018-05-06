@@ -1,8 +1,5 @@
-
-
 import * as axios from "axios";
 import * as React from 'react';
-// import React, { Component } from 'react';
 
 import {
    BrowserRouter as Router,
@@ -48,7 +45,10 @@ class App extends React.Component<any, any> {
     return (
         <React.Fragment>
             <Router>
-                <Route exact={true} path="/" component={Home} />
+                <Switch>
+                    <Route exact={true} path="/" component={Home} />
+                    <Route exact={true} path="/sds" component={Home} />
+                </Switch>
             </Router>
             <Home/>
             < Router >
